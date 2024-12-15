@@ -14,6 +14,7 @@ Alpine Linux is a lightweight Linux distribution that is often used as the base 
 
 Alpine Linux can be [Downloaded from the Alpine Linux website](https://www.alpinelinux.org/downloads/). The Virtual edition is well suited to VMs
 
-- [Package Management in Alpine Linux](./alpine-linux/package-management.md)
-- [Networking in Alpine Linux](./alpine-linux/networking-in-alpine-linux.md)
-
+- [Package Management](./alpine-linux/package-management.md)
+- [User and Group Management](./alpine-linux/users-in-alpine-linux.md)
+- [Networking Management](./alpine-linux/networking-in-alpine-linux.md)
+- [Service Management](./alpine-linux/services-in-alpine-linux.md)
