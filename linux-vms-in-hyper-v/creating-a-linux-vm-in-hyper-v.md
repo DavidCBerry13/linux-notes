@@ -77,3 +77,17 @@ The script takes the following parameters:
 | `VhdxSizes`     | No           | 60 GB                         | An array of the hard disk sizes to create.  To create a VM with a 60GB and 120GB hard drive, pass the value `@(60GB,120GB)` to this parameter |
 | `OS`            | Yes          |                               | Either `Windows` or `Linux`.  This parameter will set the correct block size for Linux hard drives (1 MB0 and name the VHDX files appropriately for the operating system) |
 | `IsoFilePath`   | No           |                               | The path of the ISO file to mount to the DVD of the VM.           |
+
+## Examples Creating Linux VMs Using the Script
+
+The following command creates a VM named *Linux VM* connected to the switch *vm-switch*.  The VM has the default 2 processors, 2 GB of RAM, and a single 60 GB hard drive. A DVD drive is attached by no ISO file mounted.
+
+```PowerShell
+.\Create-VirtualMachine.ps1 -VmName "Linux VM" -VmSwithName "vm-switch" -OS Linux
+```
+
+The following example creates a VM named *Alpine Linux* connected to the switch *vm-switch*.  The VM has a single processor, 1 GB of RAM, and two hard drives, one of 20 GB and one of 128 GB.  The iso file *alpine-virt-3.21.0-x86_64.iso* is mounted on the DVD.
+
+```PowerShell
+.\Create-VirtualMachine.ps1 -VmName "Alpine Linux" -VmSwithName "vm-switch" -CpuCount 1 -Memory 1GB -VhdxSizes @(20GB,128GB) -OS Linux -IsoFilePath "C:\hyper-v\iso-files\alpine-virt-3.21.0-x86_64.iso"
+```
