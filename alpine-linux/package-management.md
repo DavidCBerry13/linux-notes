@@ -14,7 +14,6 @@ The Alpine package index is located at [https://pkgs.alpinelinux.org/packages](h
 Alpine keeps the list of package repositories it will use in the file `/etc/apk/repositories`.  When you first install Alpine, the community repository in this file will be commented out.  You will need to uncomment this line to install most packages.
 
 You want your `/etc/apk/repositories` to look like the following (though your version number may differ):
-ip addr
 
 ```output
 #/media/cdrom/apks
