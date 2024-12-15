@@ -28,7 +28,7 @@ http://dl-cdn.alpinelinux.org/alpine/v3.21/community
 |--------------------------------|------------------------------------|
 | `apk update`                   | Updates the package index metadata on your system by downloading new package metadata from the package repositories.  This only updates the package index metadata, not the packages themselves |
 | `apk upgrade`                  | Upgrades all of the packages on the system.  This first updates the package metadata on your system, and then upgrades the packages themselves.  This means it is not technically necessary to first run `apk update` |
-| `apk upgrade \<package-name\>` | Upgrade the package with the specified name.  |
-| `apk add \<package-name\>`     | Add the package with the specified name to the system, for example `apk add nano`.  It is also possible to specify multiple package names such as `apk add nano curl git` |
-| `apk del \<package-name\>`     | Remove the specified package from the system  |
-| `apk search \<package-name\>`  | Search for the specified package              |
+| `apk upgrade <package-name>` | Upgrade the package with the specified name.  |
+| `apk add <package-name>`     | Add the package with the specified name to the system, for example `apk add nano`.  It is also possible to specify multiple package names such as `apk add nano curl git` |
+| `apk del <package-name>`     | Remove the specified package from the system  |
+| `apk search <package-name>`  | Search for the specified package              |
